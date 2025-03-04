@@ -1,115 +1,70 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import CustomerReview from "../../Components/CustomerReview";
+import { MdArrowOutward } from "react-icons/md";
+import PartnerAbout from "../Home/HomeComponent/PartnerAbout";
+
+
+const servicesCards = [
+  {
+    img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Zollabfertigungsdienste",
+    text: "Zollabfertigung",
+    desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zoll- und Begleitdokumenten für Ihre Waren.",
+  },
+  {
+    img: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Lagerung und Verpackung",
+    text: "unsere Erfahrung",
+    desc: "Der Transport hat alle ihre Lkw-Fähigkeiten im ganzen Land kombiniert, was bedeutet, dass Frachtmakler und Disponenten voaadea  sadlsl.",
+  },
+  {
+    img: "https://images.pexels.com/photos/14400831/pexels-photo-14400831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Transportvermittlung",
+    text: "Lkw-Fähigkeiten",
+    desc: "Vertrauen Sie auf unsere Erfahrung und Expertise, um Ihre Waren effizient an ihr Ziel zu bringen.",
+  },
+];
+
+
+const moveUp = {
+  initial: { y: 30, opacity: 0 },
+  whileInView: { y: 0, opacity: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.5 },
+};
 
 const Services = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
 
-  // Simple move-up animation
-  const moveUp = {
-    initial: { y: 30, opacity: 0 },
-    whileInView: { y: 0, opacity: 1 },
-    viewport: { once: true },
-    transition: { duration: 0.5 },
-  };
 
   return (
-    <div className="w-full">
-      <div className="bg-[#aed9e7] py-10 md:py-24 ">
-        {/* Header Section */}
-        <motion.div {...moveUp} className="text-center mb-10 px-3 md:px-0">
-          <h1 className="font-md text-4xl lg:text-6xl mb-4">Transport und Logistik</h1>
-          <p className="text-gray-600 ">
-            Umfassende Dienstleistungen für Import und Export von Handelswaren
-            aller Art seit 2006.
-          </p>
-        </motion.div>
+    <div className="w-full px-16 py-12">
+      <button className="border border-blue-500 px-4 py-1 rounded-full font-semibold">Our Services</button>
 
-        {/* Services Cards */}
-        <div className="flex flex-wrap gap-4 justify-center items-center px-4">
-          {[
-            {
-              img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              title: "Zollabfertigung Services",
-              desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zoll- und Begleitpapieren für Ihre Waren.",
-            },
-            {
-              img: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              title: "Lagerung und Verpackung",
-              desc: "Maßgeschneiderte Lösungen für die sichere Lagerung und Verpackung Ihrer Waren während des Transportes.",
-            },
-            {
-              img: "https://images.pexels.com/photos/14400831/pexels-photo-14400831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              title: "Transportvermittlung",
-              desc: "Vertrauen Sie auf unsere Erfahrung und Expertise, um Ihre Waren effizient ans Ziel zu bringen.",
-            },
-          ].map((service, index) => (
-            <motion.div {...moveUp} key={index} className="max-w-md ">
+      <p className="text-5xl font-semibold mt-7 mb-10">Our Seamless Solutions</p>
+
+<div className="flex flex-col md:flex-row gap-3 items-center justify-between group">
+          {servicesCards.map((service, index) => (
+            <motion.div {...moveUp} key={index} className="max-w-md relative ">
+              <p className="absolute right-3 top-2 border border-white text-white px-4 bg-gray-5 rounded-full py-1 group-hover:bg-gray-100 group-hover:text-black">{service.text}</p>
               <img
                 src={service.img}
                 alt={service.title}
                 className="w-full h-auto mx-auto rounded-2xl"
               />
-              <h2 className="text-2xl font-semibold mt-4">{service.title}</h2>
+              <h2 className="text-xl font-bold mt-4">{service.title}</h2>
               <p className="mt-2 text-md text-gray-600">{service.desc}</p>
+              <button className="text-xl flex items-center gap-x-3 mt-4 border-b pb-1 text-gray-500 hover:text-red-400 cursor-pointer">Learn More <MdArrowOutward className="text-2xl" /></button>
             </motion.div>
           ))}
         </div>
-      </div>
 
-      <div className="px-4 md:px-6 py-16  lg:w-[85%] mx-auto">
-        <motion.h1
-          {...moveUp}
-          className="text-4xl md:text-6xl font-semibold mb-4 text-center md:text-left "
-        >
-          Transportlösungen
-        </motion.h1>
-        <motion.p
-          {...moveUp}
-          className="text-gray-600 max-w-xl mx-auto md:mx-0 text-center md:text-left pb-12 pl-2 "
-        >
-          Umfassende Dienstleistungen für Import und Export in Osteuropa.
-        </motion.p>
+        <PartnerAbout></PartnerAbout>
 
-        {/* Services List */}
-        <div className="flex flex-col gap-16">
-          {[
-            {
-              img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              title: "Zollabfertigung",
-              desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zollpapieren.",
-            },
-            {
-              img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-              title: "Lagerung",
-              desc: "Sichere Lagerung und Verpackung Ihrer Waren für den Transport.",
-            },
-          ].map((service, index) => (
-            <motion.div
-              {...moveUp}
-              key={index}
-              className="flex flex-col md:flex-row items-center gap-8"
-            >
-              <div className="w-full md:w-1/2">
-                <img
-                  src={service.img}
-                  alt={service.title}
-                  className="w-full h-auto rounded-2xl"
-                />
-              </div>
-              <div className="max-w-md text-center md:text-left">
-                <h2 className="text-2xl font-semibold mt-4">{service.title}</h2>
-                <p className="mt-4 text-gray-500">{service.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-      <div>
-        <CustomerReview />
-      </div>
+
+     
     </div>
   );
 };
