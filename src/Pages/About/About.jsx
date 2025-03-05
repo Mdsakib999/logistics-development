@@ -64,21 +64,21 @@ const About = () => {
             animate="animate"
           >
             <h1 className="text-3xl font-light md:text-4xl lg:text-5xl  tracking-wide">
-              We are <br /> <span className="text-[#D98581]">#1 Logistics</span>{" "}
-              <br />
-              WORLDWIDE
+              Wir sind die <br />
+              <span className="text-[#D98581]">#1 in der Logistik</span> <br />
+              WELTWEIT
             </h1>
             <p className="text-gray-700 text-base max-w-md mb-6 pt-10">
-              We are an international scale company that has been trusted by all
-              corners of the world. Use our company to expedite your package
-              delivery!
+              Wir sind ein international anerkanntes Logistikunternehmen, dem
+              weltweit vertraut wird. Nutzen Sie unseren Service, um Ihre
+              Paketlieferung zu beschleunigen
             </p>
             <Link
               to="/contact"
               className="inline-block bg-[#D98581] text-white py-3 px-6 rounded-full font-md
                        hover:bg-[#c76e6c] transition-colors duration-300"
             >
-              GET IN TOUCH
+              Kontakt aufnehmen
             </Link>
           </motion.div>
         </div>
@@ -106,11 +106,11 @@ const About = () => {
       <div className="px-10 mt-10">
         <div className=" flex items-start justify-start py-10">
           <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
-            Why Choose Us?
+            Unsere Geschichte
           </p>
         </div>
         <h2 className="text-5xl font-md leading-13 tracking-wider">
-          Transport Solutions
+          Transportlösungen
         </h2>
         <p className=" text-gray-500 py-6">
           Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
