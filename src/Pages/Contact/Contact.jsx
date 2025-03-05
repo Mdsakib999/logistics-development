@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 import { motion } from "framer-motion";
+import { FaLocationDot, FaPhone, FaMailchimp } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -36,93 +34,162 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="relative bg-cover bg-center min-h-screen"
-      style={{
-        backgroundImage:
-          "url('https://media.istockphoto.com/id/534637743/photo/industrial-port-with-containers.jpg?s=612x612&w=0&k=20&c=J2ejE1ed31TzxqMy1x6-anSCu4CgAb-p2OrNEHLUahI=')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute inset-0 bg-gray-800 bg-opacity-60  mb-"></div>
-      <div className="flex flex-col lg:flex-row lg:pt-16 px-4 sm:px-6 md:px-10 md:pb-16 md:mb-10 justify-evenly w-full items-center relative pb-16">
-        <motion.div
-          className="mt-8 text-center lg:text-left lg:w-[40%]"
-          {...fadeUp}
-        >
-          <h1 className="text-3xl lg:text-5xl font-semibold text-white">
-            Kontaktieren Sie uns
-          </h1>
-          <p className="text-lg text-gray-400 pt-3 lg:w-[75%] pb-5">
-            Wir helfen Ihnen gerne bei Transport und Zollabfertigung.
-          </p>
-        </motion.div>
+    <div className="relative bg-gray-50 min-h-screen p-6 md:p-10">
+      {/* Outer container for staggered animations */}
+      <div
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="max-w-6xl mx-auto"
+      >
+        <div className="bg-white shadow-md rounded-4xl overflow-hidden flex flex-col md:flex-row">
+          {/* Left: Contact Info (dark background) */}
+          <div className="bg-[#293037] text-white p-8 md:w-1/2 space-y-20 rounded-4xl">
+            <div>
+              <h2 className="text-2xl font-bold ">Contact Information</h2>
+              <p className="text-gray-300 font-light">
+                Say something to start a live chat
+              </p>
+            </div>
+            <div className="space-y-10">
+              {/* Phone */}
+              <div className="flex items-center gap-8">
+                <h3 className="text-gray-100 font-semibold text-2xl">
+                  <FaPhone />
+                </h3>
+                <p className="text-white">+1 (123) 456-7890</p>
+              </div>
 
-        <motion.div
-          className="lg:w-[50%] w-full px-4 sm:px-6 md:px-8 py-8 border border-gray-200 rounded-lg shadow-md bg-white"
-          variants={staggerContainer}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.div
-            className="lg:text-2xl text-xl font-bold mb-6 text-center"
-            {...fadeUp}
-          >
-            Nehmen Sie Kontakt auf
-          </motion.div>
-          <form onSubmit={handleSubmit} className="w-full">
-            <motion.div className="flex flex-wrap -mx-2 mb-6" {...fadeUp}>
-              <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+              {/* Email */}
+              <div className="flex items-center gap-8">
+                <h3 className="text-gray-100 font-semibold text-2xl">
+                  <MdEmail />
+                </h3>
+                <p className="text-white">info@yourdomain.com</p>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-center gap-8">
+                <h3 className="text-gray-100 font-semibold text-2xl">
+                  <FaLocationDot />
+                </h3>
+                <p className="text-white">1234 Some Street, City, Country</p>
+              </div>
+            </div>
+
+            {/* Social Icons (Replace with your own) */}
+            <div className="flex space-x-4 pt-4">
+              <a href="#" className="text-gray-400 hover:text-white">
+                facebook
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                Twitter
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                {" "}
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          {/* Right: Contact Form */}
+          <div className="p-8 md:w-1/2">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Top row: Name / Phone */}
+              <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="text"
-                  placeholder="Name"
+                  name="name"
+                  placeholder="Your Name"
+                  className="w-full  p-3 border-b border-gray-500 focus:outline-none"
                   required
-                  className="w-full h-12 border border-gray-300 rounded-md px-4 focus:outline-none focus:border-blue-400 transition duration-300"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  className="w-full p-3 border-b  border-gray-500 focus:outline-none"
                 />
               </div>
-              <div className="w-full md:w-1/2 px-2">
+
+              {/* Email */}
+              <div>
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email"
+                  className="w-full p-3 border-b border-gray-500 focus:outline-none"
                   required
-                  className="w-full h-12 border border-gray-300 rounded-md px-4 focus:outline-none focus:border-blue-400 transition duration-300"
                 />
               </div>
-            </motion.div>
-            <motion.div className="mb-6" {...fadeUp}>
-              <input
-                type="text"
-                placeholder="Subject"
-                required
-                className="w-full h-12 border border-gray-300 rounded-md px-4 focus:outline-none focus:border-blue-400 transition duration-300"
-              />
-            </motion.div>
-            <motion.div className="mb-6" {...fadeUp}>
-              <textarea
-                cols="30"
-                rows="10"
-                placeholder="Write your Message..."
-                required
-                className="w-full h-32 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-400 transition duration-300"
-              ></textarea>
-            </motion.div>
-            <motion.div
-              className="flex items-center justify-center"
-              {...fadeUp}
-            >
-              <button
-                type="submit"
-                className="rounded-full group mt-2 border border-black hover:border-indigo-500 relative px-7 py-3  overflow-hidden font-bold bg-slate-50 lg:text-lg shadow-md hover:shadow-lg hover:bg-indigo-500  transition duration-300"
-              >
-                <span className="relative text-black group-hover:text-white">
-                Nachricht senden
-                </span>
-              </button>
-            </motion.div>
-          </form>
-        </motion.div>
+
+              {/* Subject */}
+              <div>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  className="w-full p-3 border-b border-gray-500 focus:outline-none"
+                />
+              </div>
+
+              {/* Message */}
+              <div>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message..."
+                  className="w-full p-1 border-b border-gray-500 focus:outline-none"
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex items-center justify-end">
+                <button
+                  type="submit"
+                  className="px-6 py-3 bg-gray-900 text-white rounded-full 
+                           hover:bg-gray-800 transition-colors "
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="border-b py-10 border-gray-200"></div>
+        <div
+          variants={fadeUp}
+          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          {/* Left: Hours & Info */}
+          <div className="">
+            <div className=" flex items-start justify-start pb-8">
+              <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
+                Visit Us
+              </p>
+            </div>
+            <h2 className="text-5xl font-md leading-13 tracking-wider">
+              Location
+            </h2>
+            <p className="py-6">
+              Yogyakarta, Yogyakarta City, Special Region of Yogyakarta
+            </p>
+            <p className="text-gray-500">Opening Hours</p>
+            <p className="text-gray-700">9 AM - 6 PM</p>
+          </div>
+
+          {/* Right: Embedded Map */}
+
+          <div className="w-full  h-[500px] md:pl-8">
+            <iframe
+              title="Google Maps"
+              className="w-full h-full rounded-2xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.090575191847!2d110.41623791415592!3d-7.890350980638159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bad1e327db44b%3A0xb1c386621e00fe30!2sKota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sen!2sid!4v1645952321163!5m2!1sen!2sid"
+              allowFullScreen={true}
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
