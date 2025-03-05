@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
 import PartnerAbout from "../Home/HomeComponent/PartnerAbout";
+import ContactForm from "../../Components/ContactForm";
+import CustomerReview from "../../Components/CustomerReview";
 
 
 const servicesCards = [
@@ -9,7 +11,7 @@ const servicesCards = [
     img: "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Zollabfertigungsdienste",
     text: "Zollabfertigung",
-    desc: "Professionelle Unterstützung bei der Ausstellung und Bearbeitung von Zoll- und Begleitdokumenten für Ihre Waren.",
+    desc: "Unterstützung von Experten bei der Abwicklung der Zollformalitäten und der Vorbereitung der Begleitpapiere",
   },
   {
     img: "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -43,12 +45,13 @@ const Services = () => {
     <div className="w-full px-16 py-12">
       <button className="border border-blue-500 px-4 py-1 rounded-full font-semibold">Our Services</button>
 
-      <p className="text-5xl font-semibold mt-7 mb-10">Our Seamless Solutions</p>
+      <p className="text-5xl font-semibold mt-7 mb-10">Unsere reibungslosen Lösungen
+      </p>
 
 <div className="flex flex-col md:flex-row gap-3 items-center justify-between group">
           {servicesCards.map((service, index) => (
             <motion.div {...moveUp} key={index} className="max-w-md relative ">
-              <p className="absolute right-3 top-2 border border-white text-white px-4 bg-gray-5 rounded-full py-1 group-hover:bg-gray-100 group-hover:text-black">{service.text}</p>
+              <p className="absolute right-3 top-2 border border-white text-black px-4 bg-gray-5 rounded-full py-1 bg-gray-50">{service.text}</p>
               <img
                 src={service.img}
                 alt={service.title}
@@ -62,6 +65,10 @@ const Services = () => {
         </div>
 
         <PartnerAbout></PartnerAbout>
+        
+      <CustomerReview></CustomerReview>
+
+        <ContactForm></ContactForm>
 
 
      
