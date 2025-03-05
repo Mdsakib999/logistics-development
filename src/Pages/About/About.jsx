@@ -3,10 +3,23 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CustomerReview from "../../Components/CustomerReview";
 import ContactForm from "../../Components/ContactForm";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/effect-cards";
+import "swiper/css";
 
 const About = () => {
   // Array of images
   const images = [
+    "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/3057963/pexels-photo-3057963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ];
+
+  const carouselImages = [
     "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3057963/pexels-photo-3057963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -90,16 +103,44 @@ const About = () => {
       </div>
       {/* transport solutions */}
 
-      <div className="px-10">
+      <div className="px-10 mt-10">
+        <div className=" flex items-start justify-start py-10">
+          <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
+            Why Choose Us?
+          </p>
+        </div>
         <h2 className="text-5xl font-md leading-13 tracking-wider">
           Transport Solutions
         </h2>
         <p className=" text-gray-500 py-6">
           Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
         </p>
-        <div>{/* carousel images  */}</div>
+        <div>
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            spaceBetween={20}
+            slidesPerView={1}
+            className="w-full"
+          >
+            {carouselImages.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="w-full h-[420px] flex items-center justify-center">
+                  <img
+                    src={img}
+                    alt={`Transport ${idx}`}
+                    className="w-full h-full object-cover rounded-4xl shadow-md"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
+      <div className="border-b py-10 border-gray-200"></div>
       <CustomerReview />
+      <div className="border-b py-10 border-gray-200"></div>
       <ContactForm />
     </div>
   );

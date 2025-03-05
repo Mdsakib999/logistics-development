@@ -5,7 +5,7 @@ import "swiper/css/effect-cards";
 import "swiper/css";
 import { EffectCards } from "swiper/modules";
 import { div } from "framer-motion/client";
-
+import { MdArrowOutward } from "react-icons/md";
 const HomeSlider = () => {
   return (
     <div className="bg-gray-100">
@@ -51,8 +51,9 @@ const HomeSlider = () => {
               </SwiperSlide>
             </Swiper>
             <div className="flex items-center justify-center py-10">
-              <button className="px-12 py-3 border text-white bg-[#D98581]  rounded-full">
+              <button className="inline-flex items-center gap-2 px-5 py-3 border text-white bg-[#D98581] rounded-full">
                 Learn More
+                <MdArrowOutward />
               </button>
             </div>
           </div>

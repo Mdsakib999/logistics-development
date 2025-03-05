@@ -52,10 +52,10 @@ const ContactForm = () => {
           <div className="w-full flex justify-center ">
             <button
               type="submit"
-              className="w-50 border py-3 rounded-full  text-white font-semibold
+              className="w-50 border py-3 rounded-full bg-[#D98581] text-white font-semibold
                         transition-colors mx-auto"
             >
-              SEND
+              Send
             </button>
           </div>
         </form>
