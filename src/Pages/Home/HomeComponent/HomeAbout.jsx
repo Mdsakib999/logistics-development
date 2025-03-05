@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
   // Animation variant for sliding up with fade-in
@@ -15,7 +16,7 @@ const HomeAbout = () => {
       <div className="px-10 mx-auto md:flex justify-between  gap-x-6 ">
         <div className=" flex items-start justify-start ">
           <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
-            Why Choose Us?
+            Warum uns wählen?
           </p>
         </div>
 
@@ -26,9 +27,11 @@ const HomeAbout = () => {
           <p className="font-semibold text-3xl text-gray-500 py-6 ">
             Mit Zugang zu großen Lieferanten und Herstellern weltweit.
           </p>
-          <button className="px-12 py-3 border text-white bg-black border-white rounded-full">
-            Contact
-          </button>
+          <Link to="/kontakt">
+            <button className="px-12 py-3 border text-white bg-black border-white rounded-full">
+              Kontakt
+            </button>
+          </Link>
         </div>
       </div>
     </div>

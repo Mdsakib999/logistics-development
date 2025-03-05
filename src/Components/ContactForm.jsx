@@ -6,11 +6,11 @@ const ContactForm = () => {
       {/* Heading */}
       <div className=" flex items-start justify-start ">
         <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
-          Contact Us
+          Kontaktieren Sie uns
         </p>
       </div>
       <h2 className="text-5xl font-md leading-13 tracking-wider py-8">
-        Feel Free to Contact Us
+        Kontaktieren Sie uns gerne
       </h2>
 
       {/* Dark Form Container */}
@@ -19,7 +19,7 @@ const ContactForm = () => {
           {/* Full Name */}
           <input
             type="text"
-            placeholder="Full name"
+            placeholder="Vollständiger Name"
             className="w-full p-3 rounded-full bg-[#363c43] placeholder-gray-400 text-white
                        focus:outline-none focus:ring-2 focus:ring-blue-300 text-center"
           />
@@ -27,7 +27,7 @@ const ContactForm = () => {
           {/* Email */}
           <input
             type="email"
-            placeholder="Email"
+            placeholder="E-Mail"
             className="w-full p-3 rounded-full text-center bg-[#363c43] placeholder-gray-400 text-white
                        focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
@@ -35,14 +35,14 @@ const ContactForm = () => {
           {/* Phone (Optional) */}
           <input
             type="text"
-            placeholder="Phone"
+            placeholder="Telefonnummer"
             className="w-full p-3 rounded-full text-center bg-[#363c43] placeholder-gray-400 text-white
                        focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
 
           {/* Message */}
           <textarea
-            placeholder="Message"
+            placeholder="Nachricht"
             rows="4"
             className="w-full p-3 rounded-3xl text-center bg-[#363c43] placeholder-gray-400 text-white
                        focus:outline-none focus:ring-2 focus:ring-blue-300"
@@ -55,7 +55,7 @@ const ContactForm = () => {
               className="w-50 border py-3 rounded-full bg-[#D98581] text-white font-semibold
                         transition-colors mx-auto"
             >
-              Send
+              Senden
             </button>
           </div>
         </form>

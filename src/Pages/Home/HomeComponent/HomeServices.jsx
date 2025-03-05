@@ -6,12 +6,12 @@ const HomeServices = () => {
     <div className="px-10">
       <div className="flex items-start justify-start">
         <p className="border border-blue-300 rounded-full px-2 py-1 hover:shadow-sm">
-          Our Services
+          Unsere Dienstleistungen
         </p>
       </div>
       <h2 className="text-5xl font-md leading-13 tracking-wider pt-8">
-        Everything You <br />
-        <span className="text-[#D98581]">Need</span> We Have!
+        Alles, was Sie <br />
+        <span className="text-[#D98581]">brauchen</span>,haben wir!
       </h2>
 
       <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-10 py-10">
@@ -21,7 +21,7 @@ const HomeServices = () => {
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-extrabold text-xl tracking-wide">01</p>
-          <p className="text-2xl py-5 font-light">Transport Logistics</p>
+          <p className="text-2xl py-5 font-light">Transportlogistik</p>
 
           {/* Hover Button */}
           <Link
@@ -30,7 +30,7 @@ const HomeServices = () => {
                        inline-block mt-4 px-4 py-2 border border-white text-white 
                        rounded-full hover:bg-white hover:text-[#D98581]"
           >
-            Learn More
+            Mehr erfahren
           </Link>
         </div>
 
@@ -40,7 +40,7 @@ const HomeServices = () => {
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">02</p>
-          <p className="text-2xl py-5 font-light">Cargo Terminal</p>
+          <p className="text-2xl py-5 font-light">Frachtterminal</p>
 
           <Link
             to="/dienstleistungen"
@@ -48,7 +48,7 @@ const HomeServices = () => {
                        inline-block mt-4 px-4 py-2 border border-white text-white 
                        rounded-full hover:bg-white hover:text-[#D98581]"
           >
-            Learn More
+            Mehr erfahren
           </Link>
         </div>
 
@@ -58,9 +58,7 @@ const HomeServices = () => {
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">03</p>
-          <p className="text-2xl py-5 font-light">
-            Temporary Storage Warehouse
-          </p>
+          <p className="text-2xl py-5 font-light">Zwischenlager</p>
 
           <Link
             to="/dienstleistungen"
@@ -68,7 +66,7 @@ const HomeServices = () => {
                        inline-block mt-4 px-4 py-2 border border-white text-white 
                        rounded-full hover:bg-white hover:text-[#D98581]"
           >
-            Learn More
+            Mehr erfahren
           </Link>
         </div>
 
@@ -78,7 +76,7 @@ const HomeServices = () => {
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">04</p>
-          <p className="text-2xl py-5 font-light">Custom Clearance</p>
+          <p className="text-2xl py-5 font-light">Zollabfertigung</p>
 
           <Link
             to="/dienstleistungen"
@@ -86,7 +84,7 @@ const HomeServices = () => {
                        inline-block mt-4 px-4 py-2 border border-white text-white 
                        rounded-full hover:bg-white hover:text-[#D98581]"
           >
-            Learn More
+            Mehr erfahren
           </Link>
         </div>
 
@@ -96,7 +94,7 @@ const HomeServices = () => {
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">05</p>
-          <p className="text-2xl py-5 font-light">Freight Forwarding</p>
+          <p className="text-2xl py-5 font-light">Spedition</p>
 
           <Link
             to="/dienstleistungen"
@@ -104,7 +102,7 @@ const HomeServices = () => {
                        inline-block mt-4 px-4 py-2 border border-white text-white 
                        rounded-full hover:bg-white hover:text-[#D98581]"
           >
-            Learn More
+            Mehr erfahren
           </Link>
         </div>
       </div>
