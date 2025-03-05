@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex-1 flex justify-center gap-7 text-lg">
+        <div className="flex-1 flex justify-center gap-7 text-lg ">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -54,7 +54,7 @@ const Navbar = () => {
               }`
             }
           >
-            HOME
+            Heim
           </NavLink>
           <NavLink
             to="/uber-uns"
@@ -64,7 +64,7 @@ const Navbar = () => {
               }`
             }
           >
-            ABOUT
+            über
           </NavLink>
           <NavLink
             to="/dienstleistungen"
@@ -74,7 +74,17 @@ const Navbar = () => {
               }`
             }
           >
-            SERVICES
+            Dienstleistungen
+          </NavLink>
+          <NavLink
+            to="/impressum-and-datenschutz"
+            className={({ isActive }) =>
+              `hover:text-gray-300 transition duration-300 ${
+                isActive ? "font-semibold border-b-2" : ""
+              }`
+            }
+          >
+            Impressum & Datenschutz
           </NavLink>
         </div>
 
@@ -88,7 +98,7 @@ const Navbar = () => {
             }`}
             to="/kontakt"
           >
-            Contact
+            Kontakt
           </Link>
         </div>
       </div>

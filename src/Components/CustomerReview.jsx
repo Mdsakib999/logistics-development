@@ -18,9 +18,7 @@ const CustomerReview = () => {
         </div>
       </div>
       <p className="mb-4 text-gray-800 flex-1">
-        Schnell, effizient und professionell. Die Logistikfirma hat all unsere
-        Anforderungen erfüllt und dafür gesorgt, dass alles reibungslos
-        verläuft. Eine der besten in der Branche.
+      Nutzen Sie agile Modelle, um eine klare Zusammenfassung der Strategie zu liefern und Zusammenarbeit zu fördern, um das Wertangebot zu stärken. Entwickeln Sie eine ganzheitliche Sicht auf disruptive Innovation durch Arbeitsplatzinklusion und Empowerment.
       </p>
       <div className="flex gap-2">
         {[...Array(5)].map((_, i) => (
@@ -46,9 +44,7 @@ const CustomerReview = () => {
         </div>
       </div>
       <p className="mb-4 text-black flex-1">
-        Exzellenter Service! Die Lieferung war schnell und die Ware kam in
-        einwandfreiem Zustand an. Wir schätzen die zuverlässige Kommunikation
-        und den professionellen Umgang mit unseren Bedürfnissen.
+      Setzen Sie flexible Strategien ein, um eine prägnante Zusammenfassung der Strategie zu liefern, ermutigen Sie zu gemeinsamen Anstrengungen, um das Wertangebot zu verbessern. Fördern Sie eine umfassende Sichtweise auf disruptive Innovation durch Inklusion am Arbeitsplatz und die Stärkung der Mitarbeiter.
       </p>
       <div className="flex gap-2">
         {[...Array(4)].map((_, i) => (
