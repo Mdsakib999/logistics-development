@@ -45,11 +45,11 @@ const Navbar = () => {
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex-1 flex justify-center gap-7 text-lg ">
+        <div className="flex-1 flex justify-between gap-2 text-lg ">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `hover:text-gray-300 transition duration-300 ${
+              `hover:text-gray-600 transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
