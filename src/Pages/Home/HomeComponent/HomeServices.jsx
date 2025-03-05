@@ -9,7 +9,7 @@ const HomeServices = () => {
           Unsere Dienstleistungen
         </p>
       </div>
-      <h2 className="text-5xl font-md leading-13 tracking-wider pt-8">
+      <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider pt-8">
         Alles, was Sie <br />
         <span className="text-[#D98581]">brauchen</span>,haben wir!
       </h2>
