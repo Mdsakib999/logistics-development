@@ -10,13 +10,13 @@ const HomeSlider = () => {
   return (
     <div className="bg-gray-100">
       <div className="border-b border-gray-200 mt-16"></div>
-      <div className="flex justify-center items-center mt-20 mb-10 mx-auto max-w-2xl ">
+      <div className="flex justify-center items-center mt-20 mb-10 mx-auto max-w-2xl px-6">
         <div>
-          <h2 className="text-5xl font-md leading-13 tracking-wider text-center">
+          <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider text-center">
             Entdecken Sie unsere flexiblen <br /> Versandoptionen für
             <span className="text-gray-400"> jedes Bedürfnis weltweit.</span>
           </h2>
-          <p className="text-xl text-center font-light py-6">
+          <p className="text-md lg:text-xl text-center font-light py-6 ">
             UNSERE MISSION ist es, erstklassige Qualität und Dienstleistungen
             allen unseren wertvollen Kunden zu bieten und stets innovativ und
             aufmerksam auf dem Markt zu sein, den wir bedienen.

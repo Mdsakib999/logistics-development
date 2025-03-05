@@ -15,16 +15,16 @@ const HomeAbout = () => {
     <div className="bg-white">
       <div className="px-10 mx-auto md:flex justify-between  gap-x-6 ">
         <div className=" flex items-start justify-start ">
-          <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
+          <p className="border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
             Warum uns wählen?
           </p>
         </div>
 
         <div className="max-w-[550px] mx-auto md:max-w-[600px] px-6 md:px-0 mt-8 md:mt-0">
-          <h2 className="text-5xl font-md leading-13 tracking-wider">
+          <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider">
             Über unser <br /> Unternehmen
           </h2>
-          <p className="font-semibold text-3xl text-gray-500 py-6 ">
+          <p className="font-semibold text-2xl lg:text-3xl text-gray-500 py-6 ">
             Mit Zugang zu großen Lieferanten und Herstellern weltweit.
           </p>
           <Link to="/kontakt">

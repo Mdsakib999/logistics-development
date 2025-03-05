@@ -9,7 +9,7 @@ const ContactForm = () => {
           Kontaktieren Sie uns
         </p>
       </div>
-      <h2 className="text-5xl font-md leading-13 tracking-wider py-8">
+      <h2 className="text-4xl text-center lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
         Kontaktieren Sie uns gerne
       </h2>
 
