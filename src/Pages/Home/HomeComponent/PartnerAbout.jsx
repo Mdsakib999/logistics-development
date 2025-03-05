@@ -13,7 +13,11 @@ const PartnerAbout = () => {
 
   return (
     <div className="">
-      <div className="lg:w-[80%] mx-auto md:flex justify-between items-center mt-20 gap-x-8 py-10  px-10 bg-slate-100 rounded-t-xl">
+      <div>
+        <p className="text-5xl text-center mt-16 font-semibold">Lieferlösungen</p>
+        <p className="text-center mt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo.</p>
+      </div>
+      <div className="lg:w-[80%] mx-auto md:flex justify-between items-center mt-16 gap-x-8 py-10  px-10 bg-slate-100 rounded-t-xl ">
         <div className=" lg:w-[40%] ">
           <motion.h1
             {...upwardMotion}
