@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/effect-cards";
-import "swiper/css";
-import { EffectCards } from "swiper/modules";
+
 const HomeAbout = () => {
   // Animation variant for sliding up with fade-in
   const upwardMotion = {
