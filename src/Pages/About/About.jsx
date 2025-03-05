@@ -1,159 +1,106 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import CustomerReview from "../../Components/CustomerReview";
+import ContactForm from "../../Components/ContactForm";
 
 const About = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
-    useEffect(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, []);
-
+  // Array of images
   const images = [
     "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3057963/pexels-photo-3057963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
-
-  const openModal = (image) => {
-    setSelectedImage(image);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedImage("");
-  };
 
   // Simple variant for a slight upward movement
   const upwardMotion = {
-    initial: { y: 10 },
-    animate: { y: 0 },
+    initial: { y: 10, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
     transition: { duration: 0.6 },
   };
 
   return (
-    <div className="px-6 py-10 lg:py-16 ">
-      {/* Text Section */}
-      <motion.div
-        className="flex flex-col md:flex-row items-center justify-between mb-16 "
-        {...upwardMotion}
-      >
-        <div className="max-w-2xl mb-8 md:mb-0 leading-7 text-md">
-          <motion.h1
-            className="text-4xl md:text-5xl font-medium mb-4 text-center md:text-left tracking-wide py-6"
-            {...upwardMotion}
-          >
-            Ihr Partner für <br /> Transport und Logistik
-          </motion.h1>
-          <motion.p className="text-gray-600 mb-4 max-w-xl  text-center md:text-left" {...upwardMotion}>
-            Zoll Trans Service GmbH bietet seit 2006 umfassende Dienstleistungen
-            im Import und Export, spezialisiert auf Osteuropa. Vertrauen Sie auf
-            unsere maßgeschneiderten Lösungen für Ihre Transportbedürfnisse.
-          </motion.p>
-          <Link to="/kontakt">
-            <motion.button
-              className="p-4 border rounded-4xl w-45 my-10 ml-[25%] md:ml-0 hover:text-indigo-500 cursor-pointer transition duration-300"
-              {...upwardMotion}
-            >
-              Kontakt
-            </motion.button>
-          </Link>
-        </div>
+    <div>
+      <div className="px-6 md:px-10  lg:py-16">
+        {/* Two-column layout */}
 
-        {/* Main Image */}
-        <motion.div
-          className="w-full md:w-1/2 h-80 md:h-auto"
-          {...upwardMotion}
-        >
-          <img
-            src="https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="Zollabfertigung Services"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </motion.div>
-      </motion.div>
-
-      {/* Image Grid Section */}
-      <div>
-        <motion.h1
-          className="text-4xl md:text-5xl font-medium mb-4 text-center tracking-wide "
-          {...upwardMotion}
-        >
-          Zoll Trans
-        </motion.h1>
-        <motion.p
-          className="text-center mb-8 text-gray-600 pb-10 pt-6 "
-          {...upwardMotion}
-        >
-          Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
-        </motion.p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((image, index) => (
-            <motion.div
-              key={index}
-              className="relative aspect-[3/4]"
-              {...upwardMotion}
-            >
-              <img
-                src={image}
-                alt={`Gallery Image ${index + 1}`}
-                className="w-full h-full object-cover rounded-2xl cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => openModal(image)}
-              />
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <motion.div
-          className="fixed inset-0 flex items-center justify-center z-50"
-          {...upwardMotion}
-        >
-          {/* Overlay */}
-          <div
-            className="absolute inset-0 bg-black/30 backdrop-blur-sm"
-            onClick={closeModal}
-          ></div>
-
-          {/* Modal Content */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
+          {/* Left Column: Large Feature Image */}
           <motion.div
-            className="bg-white p-4 md:p-6 rounded-lg shadow-2xl z-10 max-w-3xl mx-4 relative"
-            {...upwardMotion}
+            className="lg:w-1/2  flex items-center justify-end"
+            variants={upwardMotion}
+            initial="initial"
+            animate="animate"
           >
-            {/* Close Button */}
-            <button
-              className="absolute -top-3 -right-3 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors z-20"
-              onClick={closeModal}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-
-            {/* Modal Image */}
+            {/* Use the first image as the main feature image */}
             <img
-              src={selectedImage}
-              alt="Selected"
-              className="max-h-[80vh] w-auto object-contain rounded-lg"
+              src={images[0]}
+              alt="Large Warehouse"
+              className="w-[450px] h-[450px] rounded-lg shadow-md object-cover "
             />
           </motion.div>
+
+          {/* Right Column: Text Content */}
+          <motion.div
+            className="lg:w-1/2"
+            variants={upwardMotion}
+            initial="initial"
+            animate="animate"
+          >
+            <h1 className="text-3xl font-light md:text-4xl lg:text-5xl  tracking-wide">
+              We are <br /> <span className="text-[#D98581]">#1 Logistics</span>{" "}
+              <br />
+              WORLDWIDE
+            </h1>
+            <p className="text-gray-700 text-base max-w-md mb-6 pt-10">
+              We are an international scale company that has been trusted by all
+              corners of the world. Use our company to expedite your package
+              delivery!
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block bg-[#D98581] text-white py-3 px-6 rounded-full font-md
+                       hover:bg-[#c76e6c] transition-colors duration-300"
+            >
+              GET IN TOUCH
+            </Link>
+          </motion.div>
+        </div>
+
+        {/* Row of smaller images */}
+        <motion.div
+          className="mt-8 flex flex-wrap gap-6 justify-center"
+          variants={upwardMotion}
+          initial="initial"
+          animate="animate"
+        >
+          {/* Slice off the rest of the images for the thumbnail row */}
+          {images.slice(1).map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt={`Logistics ${index}`}
+              className="w-42 h-32 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300"
+            />
+          ))}
         </motion.div>
-      )}
+      </div>
+      {/* transport solutions */}
+
+      <div className="px-10">
+        <h2 className="text-5xl font-md leading-13 tracking-wider">
+          Transport Solutions
+        </h2>
+        <p className=" text-gray-500 py-6">
+          Ihr Partner für Transport, Logistik und Zollabfertigung seit 2006.
+        </p>
+        <div>{/* carousel images  */}</div>
+      </div>
+      <CustomerReview />
+      <ContactForm />
     </div>
   );
 };

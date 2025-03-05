@@ -5,6 +5,7 @@ import CustomerReview from "../../Components/CustomerReview";
 import HomeAbout from "./HomeComponent/HomeAbout";
 import HomeSlider from "./HomeComponent/HomeSlider";
 import HomeServices from "./HomeComponent/HomeServices";
+import ContactForm from "../../Components/ContactForm";
 
 const Home = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeSlider></HomeSlider>
       <HomeServices></HomeServices>
       <CustomerReview></CustomerReview>
+      <ContactForm></ContactForm>
     </div>
   );
 };
