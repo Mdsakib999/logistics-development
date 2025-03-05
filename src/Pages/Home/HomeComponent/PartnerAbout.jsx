@@ -23,12 +23,10 @@ const PartnerAbout = () => {
             {...upwardMotion}
             className="md:text-5xl text-3xl text-center md:text-left font-semibold mb-6 flex items-center gap-x-4 "
           >
-            Ihr Partner <FaArrowRightLong className="text-3xl  mt-2" />
+            Zollabfertigung <FaArrowRightLong className="text-3xl  mt-2" />
           </motion.h1>
           <p className="text-center md:text-left px-4 md:px-0">
-            Zoll Trans Service GmbH bietet umfassende Dienstleistungen im Import
-            und Export, spezialisiert auf Osteuropa, mit maßgeschneiderten
-            Lösungen für Ihre Logistikbedürfnisse.
+          Fachkundige Unterstützung bei der Erstellung und Verwaltung von Zolldokumenten.
           </p>
         </div>
 
@@ -61,12 +59,10 @@ const PartnerAbout = () => {
           className="lg:w-[40%] px-5 mt-10 md:mt-0 text-center md:text-left"
         >
           <h1 className="md:text-5xl text-3xl font-semibold mb-8 md:mb-16 flex items-center gap-x-4">
-            <FaArrowLeftLong className="text-3xl  mt-2" /> Über uns
+            <FaArrowLeftLong className="text-3xl  mt-2" /> Zollabfertigung
           </h1>
           <p>
-            Seit 2006 unterstützen wir Sie bei Transport, Logistik und
-            Zollabfertigung, um Ihre Waren sicher und effizient ans Ziel zu
-            bringen.
+          Effiziente Unterstützung bei der Ausstellung und Verwaltung von Zolldokumenten.
           </p>
         </motion.div>
       </div>
