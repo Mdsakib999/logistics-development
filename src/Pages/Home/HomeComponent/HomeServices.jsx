@@ -17,7 +17,7 @@ const HomeServices = () => {
       <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-10 py-10">
         {/* Card 1 */}
         <div
-          className="relative group h-[220px] bg-gray-100 rounded-2xl p-4 text-gray-500 
+          className="flex flex-col items-start justify-between relative group h-[220px] bg-gray-200 rounded-2xl p-4 text-gray-500 
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-extrabold text-xl tracking-wide">01</p>
@@ -36,7 +36,7 @@ const HomeServices = () => {
 
         {/* Card 2 */}
         <div
-          className="relative group h-[220px] bg-gray-100 rounded-2xl p-4 text-gray-500 
+          className="flex flex-col items-start justify-between relative group h-[220px] bg-gray-200 rounded-2xl p-4 text-gray-500 
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">02</p>
@@ -54,7 +54,7 @@ const HomeServices = () => {
 
         {/* Card 3 */}
         <div
-          className="relative group h-[220px] bg-gray-100 rounded-2xl p-4 text-gray-500 
+          className="flex flex-col items-start justify-between relative group h-[220px] bg-gray-200 rounded-2xl p-4 text-gray-500 
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">03</p>
@@ -74,7 +74,7 @@ const HomeServices = () => {
 
         {/* Card 4 */}
         <div
-          className="relative group h-[220px] bg-gray-100 rounded-2xl p-4 text-gray-500 
+          className="flex flex-col items-start justify-between relative group h-[220px] bg-gray-200 rounded-2xl p-4 text-gray-500 
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">04</p>
@@ -92,7 +92,7 @@ const HomeServices = () => {
 
         {/* Card 5 */}
         <div
-          className="relative group h-[220px] bg-gray-100 rounded-2xl p-4 text-gray-500 
+          className="flex flex-col items-start justify-between relative group h-[220px] bg-gray-200 rounded-2xl p-4 text-gray-500 
                         transition-all duration-300 hover:bg-[#D98581] hover:text-white"
         >
           <p className="font-bold text-xl">05</p>
