@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="">
       {/* Nav bar */}
-<Navbar></Navbar>
+      <Navbar></Navbar>
 
       {/* Children component */}
       <div className="min-h-[calc(100vh-196px)] ">
@@ -18,7 +18,7 @@ function App() {
       </div>
 
       {/* Footer */}
-<Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 }

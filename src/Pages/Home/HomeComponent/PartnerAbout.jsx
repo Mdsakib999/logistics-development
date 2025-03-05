@@ -26,7 +26,6 @@ const PartnerAbout = () => {
             und Export, spezialisiert auf Osteuropa, mit maßgeschneiderten
             Lösungen für Ihre Logistikbedürfnisse.
           </p>
-
         </div>
 
         <motion.div
@@ -42,7 +41,7 @@ const PartnerAbout = () => {
       </div>
 
       <div className="lg:w-[80%] mx-auto md:flex justify-between items-center  gap-x-8 py-10  px-10 bg-slate-100 rounded-b-xl">
-      <motion.div
+        <motion.div
           {...upwardMotion}
           className="max-w-[450px] mx-auto md:max-w-[500px] px-6 md:px-0 mt-8 md:mt-0"
         >
@@ -58,7 +57,7 @@ const PartnerAbout = () => {
           className="lg:w-[40%] px-5 mt-10 md:mt-0 text-center md:text-left"
         >
           <h1 className="md:text-5xl text-3xl font-semibold mb-8 md:mb-16 flex items-center gap-x-4">
-          <FaArrowLeftLong className="text-3xl  mt-2" />  Über uns
+            <FaArrowLeftLong className="text-3xl  mt-2" /> Über uns
           </h1>
           <p>
             Seit 2006 unterstützen wir Sie bei Transport, Logistik und
@@ -67,7 +66,6 @@ const PartnerAbout = () => {
           </p>
         </motion.div>
       </div>
-
     </div>
   );
 };
