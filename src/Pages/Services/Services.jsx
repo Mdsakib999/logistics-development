@@ -36,21 +36,21 @@ const moveUp = {
 };
 
 const Services = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
 
   return (
     <div className="w-full px-16 py-12">
-      <button className="border border-blue-500 px-4 py-1 rounded-full font-semibold">Our Services</button>
+      <button className="border border-blue-500 px-4 py-1 rounded-full font-semibold">Unser Dienstleistungen</button>
 
-      <p className="text-5xl font-semibold mt-7 mb-10">Unsere reibungslosen Lösungen
+      <p className="text-3xl md:text-5xl font-semibold mt-7 mb-7 md:mb-16">Unsere reibungslosen Lösungen
       </p>
 
 <div className="flex flex-col md:flex-row gap-3 items-center justify-between group">
           {servicesCards.map((service, index) => (
-            <motion.div {...moveUp} key={index} className="max-w-md relative ">
+            <motion.div {...moveUp} key={index} className="max-w-md relative  mb-12 md:mb-0">
               <p className="absolute right-3 top-2 border border-white text-black px-4 bg-gray-5 rounded-full py-1 bg-gray-50">{service.text}</p>
               <img
                 src={service.img}

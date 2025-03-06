@@ -58,7 +58,7 @@ const PartnerAbout = () => {
           {...upwardMotion}
           className="lg:w-[40%] px-5 mt-10 md:mt-0 text-center md:text-left"
         >
-          <h1 className="md:text-5xl text-3xl font-semibold mb-8 md:mb-16 flex items-center gap-x-4">
+          <h1 className="md:text-5xl text-3xl font-semibold  mb-8 md:mb-6 flex items-center gap-x-4">
             <FaArrowLeftLong className="text-3xl  mt-2" /> Zollabfertigung
           </h1>
           <p>

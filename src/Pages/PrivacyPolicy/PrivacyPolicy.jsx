@@ -9,35 +9,35 @@ const PrivacyPolicy = () => {
       {/* Impressum Section */}
       <section className="mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-8">
-          Impressum
+          Imprint
         </h1>
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Zoll-Trans-Service GmbH</strong>
+          <strong>Transway Transport</strong>
           <br />
-          Zum Stichkanal 1 A
+          Barbarossastr. 61, 63571 
           <br />
-          16727 Velten
+          Gelnhausen
         </p>
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Telefon:</strong> +49 (0) 4065 580053
+          <strong>Telefon:</strong> 
           <br />
-          <strong>E-Mail:</strong> customs@zoll-trans.de
+          <strong>E-Mail:</strong> 
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
-          Vertretungsberechtigte Person
+        Vertretungsberechtigter
         </h2>
         <p className="mb-2 text-base sm:text-lg">
-          Geschäftsführer: Uwe Peter Bernhardt
+          Geschäftsführer: Pfefferle Andreas Linsengericht
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Registereintrag
         </h2>
         <p className="mb-2 text-base sm:text-lg">
-          Eintragung im Handelsregister.
+        Eintragung im Handelsregister.
           <br />
-          <strong>Registergericht:</strong> Amtsgericht Charlottenburg (Berlin)
+          <strong>Registergericht:</strong> Amtsgericht Hanau
           <br />
-          <strong>Registernummer:</strong> HRB 100381 B
+          <strong>Registernummer:</strong> HRB 13017
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Umsatzsteuer-Identifikationsnummer

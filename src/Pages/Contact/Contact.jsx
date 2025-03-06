@@ -5,6 +5,10 @@ import { FaLocationDot, FaPhone, FaMailchimp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -46,9 +50,9 @@ const Contact = () => {
           {/* Left: Contact Info (dark background) */}
           <div className="bg-[#293037] text-white p-8 md:w-1/2 space-y-20 rounded-4xl">
             <div>
-              <h2 className="text-2xl font-bold ">Contact Information</h2>
+              <h2 className="text-2xl font-bold mb-1">Kontaktinformationen</h2>
               <p className="text-gray-300 font-light">
-                Say something to start a live chat
+              Sagen Sie etwas, um einen Live-Chat zu starten
               </p>
             </div>
             <div className="space-y-10">
@@ -73,7 +77,8 @@ const Contact = () => {
                 <h3 className="text-gray-100 font-semibold text-2xl">
                   <FaLocationDot />
                 </h3>
-                <p className="text-white">1234 Some Street, City, Country</p>
+                <p className="text-white">Barbarossastr. 61, 63571 <br />
+                Gelnhausen</p>
               </div>
             </div>
 
@@ -148,9 +153,9 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="px-6 py-3 bg-gray-900 text-white rounded-full 
-                           hover:bg-gray-800 transition-colors "
+                           hover:bg-gray-700 cursor-pointer transition-colors "
                 >
-                  Send Message
+                  Nachricht senden
                 </button>
               </div>
             </form>
@@ -159,20 +164,21 @@ const Contact = () => {
         <div className="border-b py-10 border-gray-200"></div>
         <div
           variants={fadeUp}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6  lg:items-center"
         >
           {/* Left: Hours & Info */}
           <div className="">
             <div className=" flex items-start justify-start pb-8">
-              <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
-                Visit Us
+              <p className=" border border-blue-300 rounded-full px-4 py-1  hover:shadow-sm">
+              Besuch uns
               </p>
             </div>
-            <h2 className="text-5xl font-md leading-13 tracking-wider">
-              Location
+            <h2 className="text-4xl md:text-5xl font-md leading-13 tracking-wider">
+            Standort
             </h2>
             <p className="py-6">
-              Yogyakarta, Yogyakarta City, Special Region of Yogyakarta
+            Barbarossastr. 61, 63571 <br />
+            Gelnhausen
             </p>
             <p className="text-gray-500">Opening Hours</p>
             <p className="text-gray-700">9 AM - 6 PM</p>
@@ -180,7 +186,7 @@ const Contact = () => {
 
           {/* Right: Embedded Map */}
 
-          <div className="w-full  h-[500px] md:pl-8">
+          <div className="w-full  h-[400px] md:pl-8">
             <iframe
               title="Google Maps"
               className="w-full h-full rounded-2xl"
