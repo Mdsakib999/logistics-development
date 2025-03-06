@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-2 lg:p-4 ">
       {/* Heading */}
-      <div className=" flex items-start justify-start ">
+      <div className="flex items-start justify-start ">
         <p className=" border border-blue-300 rounded-full px-4 py-1  hover:shadow-sm">
           Kontaktieren Sie uns
         </p>
@@ -14,7 +14,7 @@ const ContactForm = () => {
       </h2>
 
       {/* Dark Form Container */}
-      <div className="bg-[#293037] w-full max-w-7xl rounded-4xl p-6 lg:p-25 flex flex-col justify-between">
+      <div className="bg-[#293037] w-full max-w-4xl lg:max-w-7xl rounded-4xl p-6 lg:p-25 flex flex-col justify-between">
         <form className="flex flex-col space-y-6">
           {/* Full Name */}
           <input
