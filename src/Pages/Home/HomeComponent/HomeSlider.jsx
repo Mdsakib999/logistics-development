@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-cards";
 import "swiper/css";
@@ -13,8 +13,8 @@ const HomeSlider = () => {
       <div className="flex justify-center items-center mt-20 mb-10 mx-auto max-w-2xl ">
         <div>
           <h2 className="text-5xl font-md leading-13 tracking-wider text-center">
-            Explore Our Flexible <br /> Shipping Options for
-            <span className="text-gray-400"> Every need in the world</span>
+            Entdecken Sie unsere flexiblen <br /> Versandoptionen für
+            <span className="text-gray-400"> jedes Bedürfnis weltweit.</span>
           </h2>
           <p className="text-xl text-center font-light py-6">
             UNSERE MISSION ist es, erstklassige Qualität und Dienstleistungen
@@ -50,11 +50,17 @@ const HomeSlider = () => {
                 />
               </SwiperSlide>
             </Swiper>
+
             <div className="flex items-center justify-center py-10">
-              <button className="inline-flex items-center gap-2 px-5 py-3 border text-white bg-[#D98581] rounded-full">
-                Learn More
-                <MdArrowOutward />
-              </button>
+              <Link to="/dienstleistungen">
+                <button
+                  className="inline-flex items-center gap-2 px-5 py-3 border text-white bg-[#D98581] rounded-full
+                     transition-colors duration-300 hover:bg-[#c76e6c]"
+                >
+                  Mehr erfahren
+                  <MdArrowOutward />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
