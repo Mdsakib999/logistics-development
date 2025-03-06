@@ -36,16 +36,16 @@ const Navbar = () => {
       }`}
     >
       {/* Desktop Navbar */}
-      <div className="hidden md:flex items-center">
+      <div className="hidden lg:flex items-center">
         {/* Left: Logo */}
-        <div className="flex-1 flex justify-start">
+        <div className=" flex justify-start">
           <NavLink to="/">
             <img src={logo} alt="Logo" className="h-12" />
           </NavLink>
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex-1 flex justify-between gap-2 text-lg ">
+        <div className="flex-1 flex justify-center gap-10  items-center text-lg ">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Contact Button */}
-        <div className="flex-1 flex justify-end">
+        <div className=" flex justify-end">
           <Link
             className={`border px-6 py-2 font-semibold text-lg rounded-full transition duration-300 ${
               transparent
@@ -104,7 +104,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="flex md:hidden items-center justify-between">
+      <div className="flex lg:hidden items-center justify-between">
         <div>
           <NavLink to="/">
             <img src={logo} alt="Logo" className="h-12" />
@@ -117,7 +117,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full shadow-lg transform transition-transform duration-500 md:hidden ${
+        className={`fixed top-0 left-0 w-full shadow-lg transform transition-transform duration-500 lg:hidden ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         } bg-white`}
       >

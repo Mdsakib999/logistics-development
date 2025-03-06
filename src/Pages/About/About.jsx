@@ -112,7 +112,7 @@ const About = () => {
             Unsere Geschichte
           </p>
         </div>
-        <h2 className="text-5xl font-md leading-13 tracking-wider">
+        <h2 className="text-3xl md:text-5xl font-md leading-13 tracking-wider">
           Transportlösungen
         </h2>
         <p className=" text-gray-500 py-6">
