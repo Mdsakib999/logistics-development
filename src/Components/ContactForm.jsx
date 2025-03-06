@@ -2,14 +2,14 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-2 lg:p-4">
       {/* Heading */}
-      <div className=" flex items-start justify-start ">
+      <div className="flex items-start justify-start ">
         <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
           Kontaktieren Sie uns
         </p>
       </div>
-      <h2 className="text-4xl text-center lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
+      <h2 className="text-3xl text-center lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
         Kontaktieren Sie uns gerne
       </h2>
 
