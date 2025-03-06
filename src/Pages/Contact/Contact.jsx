@@ -61,7 +61,7 @@ const Contact = () => {
                 <h3 className="text-gray-100 font-semibold text-2xl">
                   <FaPhone />
                 </h3>
-                <p className="text-white">+1 (123) 456-7890</p>
+                <p className="text-white">+1 (123) 000000</p>
               </div>
 
               {/* Email */}
@@ -69,7 +69,7 @@ const Contact = () => {
                 <h3 className="text-gray-100 font-semibold text-2xl">
                   <MdEmail />
                 </h3>
-                <p className="text-white">info@yourdomain.com</p>
+                <p className="text-white">customs@transway-transport.de</p>
               </div>
 
               {/* Address */}

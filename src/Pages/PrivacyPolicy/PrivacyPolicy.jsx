@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         <p className="mb-2 text-base sm:text-lg">
           <strong>Telefon:</strong> 
           <br />
-          <strong>E-Mail:</strong> 
+          <strong>E-Mail: </strong> customs@transway-transport.de
         </p>
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
         Vertretungsberechtigter
@@ -78,9 +78,9 @@ const PrivacyPolicy = () => {
           <br />
           <strong>Telefon:</strong> 
           <br />
-          <strong>E-Mail:</strong> 
+          <strong>E-Mail:</strong> customs@transway-transport.de
           <br />
-          <strong>Website</strong>
+          <strong>Website:</strong>
         </p>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
           3. Erhebung und Speicherung personenbezogener Daten sowie Art und
