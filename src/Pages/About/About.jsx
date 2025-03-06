@@ -40,7 +40,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="px-6 md:px-10  lg:py-16">
+      <div className="px-6 md:px-10 sm:py-4  md:py-8 lg:py-16">
         {/* Two-column layout */}
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
@@ -112,7 +112,7 @@ const About = () => {
             Unsere Geschichte
           </p>
         </div>
-        <h2 className="text-5xl font-md leading-13 tracking-wider">
+        <h2 className="text-3xl md:text-5xl font-md leading-13 tracking-wider">
           Transportlösungen
         </h2>
         <p className=" text-gray-500 py-6">
@@ -141,9 +141,9 @@ const About = () => {
           </Swiper>
         </div>
       </div>
-      <div className="border-b py-10 border-gray-200"></div>
+      <div className="border-b  py-3 lg:py-5 xl:py-10 border-gray-200"></div>
       <CustomerReview />
-      <div className="border-b py-10 border-gray-200"></div>
+      <div className="border-b py-3 lg:py-5 xl:py-10 border-gray-200"></div>
       <ContactForm />
     </div>
   );
