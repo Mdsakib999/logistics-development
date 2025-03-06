@@ -36,20 +36,20 @@ const Navbar = () => {
       }`}
     >
       {/* Desktop Navbar */}
-      <div className="hidden md:flex items-center">
+      <div className="hidden lg:flex items-center">
         {/* Left: Logo */}
-        <div className="flex-1 flex justify-start">
+        <div className=" flex justify-start">
           <NavLink to="/">
             <img src={logo} alt="Logo" className="h-12" />
           </NavLink>
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex-1 flex justify-between gap-2 text-lg ">
+        <div className="flex-1 flex justify-center gap-10  items-center text-lg ">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `hover:text-gray-600 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -59,7 +59,7 @@ const Navbar = () => {
           <NavLink
             to="/uber-uns"
             className={({ isActive }) =>
-              `hover:text-gray-300 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -69,7 +69,7 @@ const Navbar = () => {
           <NavLink
             to="/dienstleistungen"
             className={({ isActive }) =>
-              `hover:text-gray-300 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -79,7 +79,7 @@ const Navbar = () => {
           <NavLink
             to="/impressum-and-datenschutz"
             className={({ isActive }) =>
-              `hover:text-gray-300 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Contact Button */}
-        <div className="flex-1 flex justify-end">
+        <div className=" flex justify-end">
           <Link
             className={`border px-6 py-2 font-semibold text-lg rounded-full transition duration-300 ${
               transparent
@@ -104,7 +104,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="flex md:hidden items-center justify-between">
+      <div className="flex lg:hidden items-center justify-between">
         <div>
           <NavLink to="/">
             <img src={logo} alt="Logo" className="h-12" />
@@ -117,66 +117,55 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full shadow-lg transform transition-transform duration-500 md:hidden ${
+        className={`fixed top-0 left-0 w-full shadow-lg transform transition-transform duration-500 lg:hidden ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
-        } ${transparent ? "bg-transparent" : "bg-white"}`}
+        } bg-white`}
       >
         <div className="flex justify-end p-4">
-          <FaTimes className="text-2xl cursor-pointer" onClick={toggleMenu} />
+          <FaTimes
+            className="text-2xl cursor-pointer text-black mr-2"
+            onClick={toggleMenu}
+          />
         </div>
         <div className="flex flex-col items-center space-y-6 pb-6 text-lg">
           <NavLink
             onClick={toggleMenu}
             to="/"
-            className={`hover:text-[#004F98] ${
-              transparent ? "text-white" : "text-black"
-            }`}
+            className="hover:text-[#D98581] text-black"
           >
             Startseite
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/dienstleistungen"
-            className={`hover:text-[#004F98] ${
-              transparent ? "text-white" : "text-black"
-            }`}
+            className="hover:text-[#D98581] text-black"
           >
             Dienstleistungen
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/uber-uns"
-            className={`hover:text-[#004F98] ${
-              transparent ? "text-white" : "text-black"
-            }`}
+            className="hover:text-[#D98581] text-black"
           >
             Über uns
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/kontakt"
-            className={`hover:text-[#004F98] ${
-              transparent ? "text-white" : "text-black"
-            }`}
+            className="hover:text-[#D98581] text-black"
           >
             Kontakt
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/impressum-and-datenschutz"
-            className={`hover:text-[#004F98] ${
-              transparent ? "text-white" : "text-black"
-            }`}
+            className="hover:text-[#D98581] text-black "
           >
             Impressum & Datenschutz
           </NavLink>
           <div>
             <Link
-              className={`px-6 py-2 font-semibold text-lg rounded-full transition duration-300 ${
-                transparent
-                  ? "bg-[#004F98] text-white hover:bg-[#003366]"
-                  : "bg-black text-white hover:bg-gray-100 hover:text-black"
-              }`}
+              className="px-6 py-2 font-semibold text-lg rounded-full transition duration-300 bg-black text-white hover:bg-gray-100 hover:text-black"
               to="/kontakt"
             >
               Contact
