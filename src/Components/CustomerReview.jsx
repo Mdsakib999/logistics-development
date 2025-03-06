@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 const CustomerReview = () => {
   const reviewOne = (
-    <div className="bg-gray-100 shadow-lg p-6 rounded-2xl min-h-[250px] max-w-sm flex flex-col">
+    <div className="bg-gray-100 shadow-lg p-2 md:p-6 rounded-2xl min-h-[250px] max-w-xs md:max-w-sm flex flex-col">
       <div className="flex items-center mb-4">
         <div className="w-16 h-16 rounded-full mr-4 overflow-hidden">
           <img
@@ -32,7 +32,7 @@ const CustomerReview = () => {
   );
 
   const reviewTwo = (
-    <div className="bg-gray-100 shadow-lg p-6 rounded-2xl min-h-[250px] max-w-sm flex flex-col ">
+    <div className="bg-gray-100 shadow-lg p-6 rounded-2xl min-h-[250px] max-w-xs md:max-w-sm flex flex-col ">
       <div className="flex items-center mb-4">
         <div className="w-16 h-16 rounded-full mr-4 overflow-hidden">
           <img
@@ -63,7 +63,7 @@ const CustomerReview = () => {
 
   return (
     <div className="py-6 lg:py-16 container mx-auto">
-      <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider py-8 text-center ">
+      <h2 className="text-3xl lg:text-5xl md:font-semibold  mb-4 leading-13 tracking-wider px-5 md:px-0 py-8 text-center ">
         Was unsere Kunden sagen
       </h2>
 

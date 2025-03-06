@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomeServices = () => {
   return (
-    <div className="px-10">
+    <div className="px-4 md:px-10">
       <div className="flex items-start justify-start">
         <p className="border border-blue-300 rounded-full px-2 py-1 hover:shadow-sm">
           Unsere Dienstleistungen

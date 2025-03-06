@@ -39,12 +39,12 @@ const PrivacyPolicy = () => {
           <br />
           <strong>Registernummer:</strong> HRB 13017
         </p>
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
+        {/* <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Umsatzsteuer-Identifikationsnummer
         </h2>
         <p className="mb-2 text-base sm:text-lg">
           Gemäß § 27 a Umsatzsteuergesetz: DE247501028
-        </p>
+        </p> */}
       </section>
 
       {/* Datenschutzerklärung Section */}
@@ -68,16 +68,19 @@ const PrivacyPolicy = () => {
           Die verantwortliche Stelle für die Datenverarbeitung auf dieser
           Website ist:
         </p>
-        <p className="mb-4 text-base sm:text-lg">
-          Zoll-Trans-Service GmbH
+        <p className="mb-4 text-base  sm:text-lg">
+        Transway Transport
           <br />
-          Zum Stichkanal 1 A
+          Barbarossastr. 61, 63571
+
           <br />
-          16727 Velten
+          Gelnhausen
           <br />
-          <strong>Telefon:</strong> +49 (0) 4065 580053
+          <strong>Telefon:</strong> 
           <br />
-          <strong>E-Mail:</strong> customs@zoll-trans.de
+          <strong>E-Mail:</strong> 
+          <br />
+          <strong>Website</strong>
         </p>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-semibold mt-4 mb-2">
           3. Erhebung und Speicherung personenbezogener Daten sowie Art und

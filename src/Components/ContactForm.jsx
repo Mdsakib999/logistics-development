@@ -2,19 +2,19 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-2 lg:p-4">
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center p-2 lg:p-4 ">
       {/* Heading */}
       <div className="flex items-start justify-start ">
-        <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
+        <p className=" border border-blue-300 rounded-full px-4 py-1  hover:shadow-sm">
           Kontaktieren Sie uns
         </p>
       </div>
-      <h2 className="text-3xl text-center lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
+      <h2 className="text-3xl text-center  md:mb-8 lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
         Kontaktieren Sie uns gerne
       </h2>
 
       {/* Dark Form Container */}
-      <div className="bg-[#293037] w-full max-w-7xl rounded-4xl p-6 lg:p-25 flex flex-col justify-between">
+      <div className="bg-[#293037] w-full max-w-4xl lg:max-w-7xl rounded-4xl p-6 lg:p-25 flex flex-col justify-between">
         <form className="flex flex-col space-y-6">
           {/* Full Name */}
           <input
