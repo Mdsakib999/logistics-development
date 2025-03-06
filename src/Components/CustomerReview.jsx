@@ -63,7 +63,7 @@ const CustomerReview = () => {
 
   return (
     <div className="py-6 lg:py-16 container mx-auto">
-      <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider py-8 text-center ">
+      <h2 className="text-3xl lg:text-5xl md:font-semibold  mb-4 leading-13 tracking-wider px-5 md:px-0 py-8 text-center ">
         Was unsere Kunden sagen
       </h2>
 

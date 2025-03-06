@@ -16,13 +16,13 @@ const Footer = () => {
                 Ihr Partner für Transport und Logistiklösungen.
               </p>
             </div>
-            <h2 className="md:text-5xl text-3xl tracking-wide py-5">CONNECT NOW</h2>
-            <p className="text-sm">© 2025. All rights reserved.</p>
+            <h2 className="md:text-5xl text-3xl tracking-wide py-5">JETZT VERBINDEN</h2>
+            <p className="text-sm">© 2025. Alle Rechte reserviert.</p>
           </div>
 
           {/* Middle Section */}
 
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center  lg:pl-12">
             <Link to="/" className="tracking-wide mb-3">Heim</Link>
             <Link to="dienstleistungen" className="tracking-wide mb-3">Dienstleistungen</Link>
             <Link to="/uber-uns" className="tracking-wide mb-3">

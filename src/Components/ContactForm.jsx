@@ -5,11 +5,11 @@ const ContactForm = () => {
     <div className="bg-white min-h-screen flex flex-col items-center justify-center p-4">
       {/* Heading */}
       <div className=" flex items-start justify-start ">
-        <p className=" border border-blue-300 rounded-full px-2 py-1  hover:shadow-sm">
+        <p className=" border border-blue-300 rounded-full px-4 py-1  hover:shadow-sm">
           Kontaktieren Sie uns
         </p>
       </div>
-      <h2 className="text-4xl text-center lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
+      <h2 className="text-3xl text-center  md:mb-8 lg:text-start lg:text-5xl font-md leading-13 tracking-wider py-8">
         Kontaktieren Sie uns gerne
       </h2>
 

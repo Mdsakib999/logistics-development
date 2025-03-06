@@ -68,12 +68,13 @@ const PrivacyPolicy = () => {
           Die verantwortliche Stelle für die Datenverarbeitung auf dieser
           Website ist:
         </p>
-        <p className="mb-4 text-base sm:text-lg">
-          Zoll-Trans-Service GmbH
+        <p className="mb-4 text-base  sm:text-lg">
+        Transway Transport
           <br />
-          Zum Stichkanal 1 A
+          Barbarossastr. 61, 63571
+
           <br />
-          16727 Velten
+          Gelnhausen
           <br />
           <strong>Telefon:</strong> +49 (0) 4065 580053
           <br />
