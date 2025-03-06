@@ -49,7 +49,7 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `hover:text-gray-600 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -59,7 +59,7 @@ const Navbar = () => {
           <NavLink
             to="/uber-uns"
             className={({ isActive }) =>
-              `hover:text-gray-600 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -69,7 +69,7 @@ const Navbar = () => {
           <NavLink
             to="/dienstleistungen"
             className={({ isActive }) =>
-              `hover:text-gray-600 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -79,7 +79,7 @@ const Navbar = () => {
           <NavLink
             to="/impressum-and-datenschutz"
             className={({ isActive }) =>
-              `hover:text-gray-600 transition duration-300 ${
+              `hover:text-[#D98581] transition duration-300 ${
                 isActive ? "font-semibold border-b-2" : ""
               }`
             }
@@ -131,35 +131,35 @@ const Navbar = () => {
           <NavLink
             onClick={toggleMenu}
             to="/"
-            className="hover:text-[#004F98] text-black"
+            className="hover:text-[#D98581] text-black"
           >
             Startseite
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/dienstleistungen"
-            className="hover:text-[#004F98] text-black"
+            className="hover:text-[#D98581] text-black"
           >
             Dienstleistungen
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/uber-uns"
-            className="hover:text-[#004F98] text-black"
+            className="hover:text-[#D98581] text-black"
           >
             Über uns
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/kontakt"
-            className="hover:text-[#004F98] text-black"
+            className="hover:text-[#D98581] text-black"
           >
             Kontakt
           </NavLink>
           <NavLink
             onClick={toggleMenu}
             to="/impressum-and-datenschutz"
-            className="hover:text-[#004F98] text-black"
+            className="hover:text-[#D98581] text-black "
           >
             Impressum & Datenschutz
           </NavLink>

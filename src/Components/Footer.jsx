@@ -16,30 +16,43 @@ const Footer = () => {
                 Ihr Partner für Transport und Logistiklösungen.
               </p>
             </div>
-            <h2 className="md:text-5xl text-3xl tracking-wide py-5">CONNECT NOW</h2>
+            <h2 className="md:text-5xl text-3xl tracking-wide py-5">
+              CONNECT NOW
+            </h2>
             <p className="text-sm">© 2025. All rights reserved.</p>
           </div>
 
           {/* Middle Section */}
 
           <div className="flex flex-col justify-center">
-            <Link to="/" className="tracking-wide mb-3">Heim</Link>
-            <Link to="dienstleistungen" className="tracking-wide mb-3">Dienstleistungen</Link>
+            <Link to="/" className="tracking-wide mb-3">
+              Heim
+            </Link>
+            <Link to="dienstleistungen" className="tracking-wide mb-3">
+              Dienstleistungen
+            </Link>
             <Link to="/uber-uns" className="tracking-wide mb-3">
-            über</Link>
-            <Link to="/impressum-and-datenschutz" className="tracking-wide mb-3">Impressum & Datenschutz
+              über
+            </Link>
+            <Link
+              to="/impressum-and-datenschutz"
+              className="tracking-wide mb-3"
+            >
+              Impressum & Datenschutz
             </Link>
           </div>
           {/* Right Section */}
           <div className="flex flex-col justify-center ">
             <h2 className=" text-lg mb-2">Transway Transport</h2>
-            <p className="mb-1">Barbarossastr. 61, 63571 <br />
-            Gelnhausen</p>
+            <p className="mb-1">
+              Barbarossastr. 61, 63571 <br />
+              Gelnhausen
+            </p>
             <a
-              href="mailto:customs@zoll-trans.de"
+              href="mailto:customs@transway-transport.de"
               className="text-blue-300 underline mb-1"
             >
-              customs@zoll-trans.de
+              customs@transway-transport.de
             </a>
             <p className="font-bold">+99 (0) 0000 000000</p>
           </div>

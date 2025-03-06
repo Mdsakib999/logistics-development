@@ -15,7 +15,7 @@ const PartnerAbout = () => {
     <div className="px-4 md:px-8">
       {/* Header */}
       <div className="text-center mt-16">
-        <p className="text-4xl lg:text-5xl font-semibold">Lieferlösungen</p>
+        <p className="text-4xl lg:text-5xl font-md">Lieferlösungen</p>
         <p className="mt-3 text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo.
         </p>
@@ -27,7 +27,7 @@ const PartnerAbout = () => {
         <div className="w-full md:w-1/2">
           <motion.h1
             {...upwardMotion}
-            className="text-3xl lg:text-4xl font-semibold mb-6 flex items-center justify-center md:justify-start gap-4"
+            className="text-3xl lg:text-4xl font-md mb-6 flex items-center justify-center md:justify-start gap-4"
           >
             Zollabfertigung <FaArrowRightLong className="text-3xl" />
           </motion.h1>
@@ -70,7 +70,7 @@ const PartnerAbout = () => {
           {...upwardMotion}
           className="w-full md:w-1/2 px-5 text-center md:text-left mt-10 md:mt-0"
         >
-          <h1 className="text-3xl lg:text-4xl font-semibold mb-6 flex items-center justify-center md:justify-start gap-4">
+          <h1 className="text-3xl lg:text-4xl font-md mb-6 flex items-center justify-center md:justify-start gap-4">
             <FaArrowLeftLong className="text-3xl" /> Zollabfertigung
           </h1>
           <motion.p {...upwardMotion}>

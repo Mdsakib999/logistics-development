@@ -44,7 +44,7 @@ const Services = () => {
         Unser Dienstleistungen
       </button>
 
-      <p className="text-3xl md:text-5xl font-semibold mt-7 mb-7 md:mb-16">
+      <p className="text-3xl md:text-5xl font-md mt-7 mb-7 md:mb-16">
         Unsere reibungslosen Lösungen
       </p>
 
