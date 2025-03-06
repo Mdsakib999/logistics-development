@@ -18,7 +18,10 @@ const CustomerReview = () => {
         </div>
       </div>
       <p className="mb-4 text-gray-800 flex-1">
-      Nutzen Sie agile Modelle, um eine klare Zusammenfassung der Strategie zu liefern und Zusammenarbeit zu fördern, um das Wertangebot zu stärken. Entwickeln Sie eine ganzheitliche Sicht auf disruptive Innovation durch Arbeitsplatzinklusion und Empowerment.
+        Nutzen Sie agile Modelle, um eine klare Zusammenfassung der Strategie zu
+        liefern und Zusammenarbeit zu fördern, um das Wertangebot zu stärken.
+        Entwickeln Sie eine ganzheitliche Sicht auf disruptive Innovation durch
+        Arbeitsplatzinklusion und Empowerment.
       </p>
       <div className="flex gap-2">
         {[...Array(5)].map((_, i) => (
@@ -44,7 +47,11 @@ const CustomerReview = () => {
         </div>
       </div>
       <p className="mb-4 text-black flex-1">
-      Setzen Sie flexible Strategien ein, um eine prägnante Zusammenfassung der Strategie zu liefern, ermutigen Sie zu gemeinsamen Anstrengungen, um das Wertangebot zu verbessern. Fördern Sie eine umfassende Sichtweise auf disruptive Innovation durch Inklusion am Arbeitsplatz und die Stärkung der Mitarbeiter.
+        Setzen Sie flexible Strategien ein, um eine prägnante Zusammenfassung
+        der Strategie zu liefern, ermutigen Sie zu gemeinsamen Anstrengungen, um
+        das Wertangebot zu verbessern. Fördern Sie eine umfassende Sichtweise
+        auf disruptive Innovation durch Inklusion am Arbeitsplatz und die
+        Stärkung der Mitarbeiter.
       </p>
       <div className="flex gap-2">
         {[...Array(4)].map((_, i) => (
@@ -56,7 +63,7 @@ const CustomerReview = () => {
 
   return (
     <div className="py-6 lg:py-16 container mx-auto">
-      <h2 className="text-5xl font-md leading-13 tracking-wider py-8 text-center ">
+      <h2 className="text-4xl lg:text-5xl font-md leading-13 tracking-wider py-8 text-center ">
         Was unsere Kunden sagen
       </h2>
 
