@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
 
             {/* Social Icons (Replace with your own) */}
-            <div className="flex space-x-4 pt-4">
+            {/* <div className="flex space-x-4 pt-4 b">
               <a href="#" className="text-gray-400 hover:text-white">
                 facebook
               </a>
@@ -94,7 +94,7 @@ const Contact = () => {
                 {" "}
                 Instagram
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Right: Contact Form */}

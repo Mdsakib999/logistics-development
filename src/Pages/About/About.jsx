@@ -17,16 +17,16 @@ const About = () => {
     "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3057963/pexels-photo-3057963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://media.istockphoto.com/id/968819844/photo/logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge.jpg?s=612x612&w=0&k=20&c=sxdjLo90_yDs1qAaKsYoHusA1Zzd-FXPEk-QXavsN-8=",
     "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://media.istockphoto.com/id/479431970/photo/container-operation-in-port.jpg?s=612x612&w=0&k=20&c=aNjl9SjxVBOEWPU_zQ4TGxStuY5bnBKDNXwOlgXbhgc=",
   ];
 
   const carouselImages = [
     "https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1211787/pexels-photo-1211787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3057963/pexels-photo-3057963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://media.istockphoto.com/id/968819844/photo/logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge.jpg?s=612x612&w=0&k=20&c=sxdjLo90_yDs1qAaKsYoHusA1Zzd-FXPEk-QXavsN-8=",
     "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/30671086/pexels-photo-30671086/free-photo-of-majestic-cranes-at-cadiz-port-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
@@ -99,7 +99,7 @@ const About = () => {
               key={index}
               src={img}
               alt={`Logistics ${index}`}
-              className="w-42 h-32 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300"
+              className="w-42 h-32 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 "
             />
           ))}
         </motion.div>

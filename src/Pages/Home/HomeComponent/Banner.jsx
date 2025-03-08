@@ -15,7 +15,7 @@ const Banner = () => {
       <div className="absolute inset-0 bg-black opacity-30 "></div>
 
       <div className="relative px-4 lg:p-10 rounded-xl max-w-3xl ">
-        <h1 className="text-4xl  lg:text-7xl font-extrabold mb-4 mt-40 lg:mt-20 leading-10 lg:leading-18 tracking-wide ">
+        <h1 className="text-4xl  lg:text-7xl font-extrabold mb-4 mt-40 lg:mt-28 leading-10 lg:leading-18 tracking-wide ">
           Ultimative <br /> Lösungen für Ihre Geschäftsträume
         </h1>
       </div>
