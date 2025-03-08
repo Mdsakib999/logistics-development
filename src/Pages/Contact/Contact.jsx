@@ -105,14 +105,14 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Ihr Name"
                   className="w-full  p-3 border-b border-gray-500 focus:outline-none"
                   required
                 />
                 <input
                   type="text"
                   name="phone"
-                  placeholder="Phone"
+                  placeholder="Telefon"
                   className="w-full p-3 border-b  border-gray-500 focus:outline-none"
                 />
               </div>
@@ -122,7 +122,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="E-Mail"
                   className="w-full p-3 border-b border-gray-500 focus:outline-none"
                   required
                 />
@@ -133,7 +133,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="Untertan"
                   className="w-full p-3 border-b border-gray-500 focus:outline-none"
                 />
               </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows="4"
-                  placeholder="Your Message..."
+                  placeholder="Ihre Nachricht..."
                   className="w-full p-1 border-b border-gray-500 focus:outline-none"
                 ></textarea>
               </div>

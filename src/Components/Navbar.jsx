@@ -149,13 +149,7 @@ const Navbar = () => {
           >
             Über uns
           </NavLink>
-          <NavLink
-            onClick={toggleMenu}
-            to="/kontakt"
-            className="hover:text-[#D98581] text-black"
-          >
-            Kontakt
-          </NavLink>
+
           <NavLink
             onClick={toggleMenu}
             to="/impressum-and-datenschutz"
@@ -165,10 +159,11 @@ const Navbar = () => {
           </NavLink>
           <div>
             <Link
+            onClick={toggleMenu}
               className="px-6 py-2 font-semibold text-lg rounded-full transition duration-300 bg-black text-white hover:bg-gray-100 hover:text-black"
               to="/kontakt"
             >
-              Contact
+              Kontakt
             </Link>
           </div>
         </div>
