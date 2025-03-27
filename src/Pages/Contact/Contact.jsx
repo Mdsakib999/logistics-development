@@ -61,7 +61,7 @@ const Contact = () => {
                 <h3 className="text-gray-100 font-semibold text-2xl">
                   <FaPhone />
                 </h3>
-                <p className="text-white">+1 (123) 000000</p>
+                <a href="tel:+4941545924012" className="font-semibol">+49 4154 5924012</a>
               </div>
 
               {/* Email */}
@@ -190,7 +190,7 @@ const Contact = () => {
             <iframe
               title="Google Maps"
               className="w-full h-full rounded-2xl"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.090575191847!2d110.41623791415592!3d-7.890350980638159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bad1e327db44b%3A0xb1c386621e00fe30!2sKota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sen!2sid!4v1645952321163!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.837497542802!2d9.205274576422092!3d50.20156837154574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd25976b498cdf%3A0x875af56438d55701!2sBarbarossastra%C3%9Fe%2061%2C%2063571%20Gelnhausen%2C%20Germany!5e0!3m2!1sen!2sbd!4v1741467832712!5m2!1sen!2sbd"
               allowFullScreen={true}
               loading="lazy"
             ></iframe>

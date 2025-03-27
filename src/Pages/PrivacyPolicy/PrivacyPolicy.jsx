@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
           Gelnhausen
         </p>
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Telefon:</strong> 
+          <strong>Telefon: </strong>  <a href="tel:+4941545924012" className="">+49 4154 5924012</a>
           <br />
           <strong>E-Mail: </strong> customs@transway-transport.de
         </p>
@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
           <br />
           Gelnhausen
           <br />
-          <strong>Telefon:</strong> 
+          <strong>Telefon:</strong>  <a href="tel:+4941545924012" className="">+49 4154 5924012</a>
           <br />
           <strong>E-Mail:</strong> customs@transway-transport.de
           <br />

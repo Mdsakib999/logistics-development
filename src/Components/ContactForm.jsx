@@ -53,7 +53,7 @@ const ContactForm = () => {
             <button
               type="submit"
               className="w-50 border py-3 rounded-full bg-[#D98581] text-white font-semibold
-                        transition-colors mx-auto"
+                        transition-colors mx-auto cursor-pointer"
             >
               Senden
             </button>

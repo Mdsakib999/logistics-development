@@ -44,11 +44,11 @@ const Footer = () => {
             </p>
             <a
               href="mailto:customs@transway-transport.de"
-              className="text-blue-300 underline mb-1"
+              className=" mb-1"
             >
               customs@transway-transport.de
             </a>
-            <p className="font-bold"> 0000 000000</p>
+            <a href="tel:+4941545924012" className="font-semibol">+49 4154 5924012</a>
           </div>
         </div>
       </footer>
